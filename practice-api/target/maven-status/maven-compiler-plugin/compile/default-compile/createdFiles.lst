@@ -1,0 +1,10 @@
+com\hs\dto\BaseQueryDTO.class
+com\hs\service\user\IUserService.class
+com\hs\dto\UserDTO.class
+com\hs\utils\StringUtil.class
+com\hs\exception\BizException.class
+com\hs\utils\RegexUtil.class
+com\hs\model\base\BaseModel.class
+com\hs\model\user\UserModel.class
+com\hs\exception\UserBusinessException.class
+com\hs\model\user\vm\UserModelVM.class

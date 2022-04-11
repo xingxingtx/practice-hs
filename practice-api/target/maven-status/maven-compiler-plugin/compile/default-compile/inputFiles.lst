@@ -1,0 +1,10 @@
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\model\user\UserModel.java
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\utils\StringUtil.java
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\exception\BizException.java
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\dto\BaseQueryDTO.java
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\model\base\BaseModel.java
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\exception\UserBusinessException.java
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\utils\RegexUtil.java
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\dto\UserDTO.java
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\service\user\IUserService.java
+D:\ideaproject\practice-parent\practice-api\src\main\java\com\hs\model\user\vm\UserModelVM.java

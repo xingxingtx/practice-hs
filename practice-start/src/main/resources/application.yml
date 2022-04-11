@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: practice
+server:
+  port: 8081
+

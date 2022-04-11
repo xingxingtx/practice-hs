@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hs.mapper.UserMapper">
+    <resultMap id="userModel" type="com.hs.model.user.UserModel">
+
+    </resultMap>
+    <sql id="baseSql">
+        id,
+        user_name,
+        login_name,
+        password,
+        sex,
+        address
+    </sql>
+
+
+    <update id="deleteUser" parameterType="com.hs.model.user.UserModel">
+        update sys_user set state = -1
+        where id = #{vm.id}
+        <if test="vm.loginName != null and vm.loginName != ''">
+            or login_name = #{vm.loginName}
+        </if>
+    </update>
+
+
+    <update id="updateUser" parameterType="com.hs.model.user.UserModel">
+        update sys_user set
+        updateTime = NOW()
+        <if test="model.userName != null and model.userName != ''">
+            ,user_name = #{vm.userName}
+        </if>
+        <if test="model.address != null and model.address != ''">
+            ,address = #{vm.address}
+        </if>
+    </update>
+
+    <select id="selectUser" resultType="com.hs.model.user.UserModel">
+        SELECT
+        <include refid="baseSql"/>
+        from sys_user
+        where status != -1
+        <if test="vm.userName != null and vm.userName != ''">
+            AND user_name = #{vm.userName}
+        </if>
+        <if test="vm.id != 0 and vm.id != null">
+            AND id = #{vm.id}
+        </if>
+    </select>
+
+    <insert id="insertUser" parameterType="com.hs.model.user.UserModel">
+        insert into sys_user
+            (user_name, login_name, password, sex, address)
+        values (#{model.userName}, #{model.loginName}, #{model.password}, #{model.sex}, #{model.address})
+    </insert>
+
+    <update id="updatePassword" parameterType="com.hs.model.user.UserModel">
+        update sys_user set
+        <if test="model.password != null and model.password != ''">
+            password = #{model.password}
+        </if>
+    </update>
+
+</mapper>
