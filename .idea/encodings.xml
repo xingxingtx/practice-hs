@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/practice-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/practice-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/practice-controller/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/practice-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/practice-start/src" charset="UTF-8" />

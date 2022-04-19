@@ -23,5 +23,11 @@
             <artifactId>practice-api</artifactId>
             <version>1.0.0.hs</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.hs</groupId>
+            <artifactId>practice-common</artifactId>
+            <version>1.0.0.hs</version>
+        </dependency>
     </dependencies>
 </project>

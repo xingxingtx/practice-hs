@@ -4,8 +4,6 @@ import com.hs.model.user.UserModel;
 import com.hs.model.user.vm.UserModelVM;
 import org.springframework.dao.DataAccessException;
 
-import java.util.List;
-
 public interface IUserService {
 
     /**

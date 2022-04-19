@@ -28,6 +28,7 @@
         <module>practice-api</module>
         <module>practice-service</module>
         <module>practice-controller</module>
+        <module>practice-common</module>
     </modules>
 
     <properties>
@@ -35,6 +36,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <mybatis-spring-boot.version>2.2.1</mybatis-spring-boot.version>
         <mysql-connector.vsersion>8.0.20</mysql-connector.vsersion>
+        <poi.version>4.1.1</poi.version>
     </properties>
 
 
